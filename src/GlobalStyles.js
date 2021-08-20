@@ -3,6 +3,15 @@ import { normalize } from 'styled-normalize';
 
 const GlobalStyles = createGlobalStyle`
 ${normalize}
+
+  *{
+    font-family: 'Bitter', serif;
+    font-family: 'Montserrat', sans-serif; 
+    }
+    html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    }
      /** Montserrat Regular **/
   @font-face {
     font-family: "Montserrat";

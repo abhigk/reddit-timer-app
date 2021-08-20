@@ -1,8 +1,9 @@
 import React from 'react';
 import {
-  BrowserRouter as Router, Switch, Route, Link,
+  BrowserRouter as Router, Switch, Route,
 } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import Header from './components/Header';
 import Home from './components/Home';
 import Search from './components/Search';
 import GlobalStyles from './GlobalStyles';
@@ -13,20 +14,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyles />
       <Router>
-        <div>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/search">Search</Link>
-              </li>
-            </ul>
-          </nav>
-        </div>
+        <Header />
         <Switch>
-          <Route path="/search">
+          <Route path="/search/javascript">
             <Search />
           </Route>
           <Route path="/">
