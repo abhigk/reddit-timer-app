@@ -30,9 +30,6 @@ const StyledFooter = styled.footer`
         ul li:not(:last-child){
             margin-bottom: 1rem;
         }
-        ul li:not(:nth-child(2)){
-          flex:1;
-        }
     }
 
 `;
